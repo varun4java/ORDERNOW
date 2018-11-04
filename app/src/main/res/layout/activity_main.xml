@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dish"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="ORDER NOW"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="116dp"
+        android:onClick="burger"
+        android:text="Burger-Rs.50"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/chowmine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/burger"
+        android:layout_marginTop="179dp"
+        android:onClick="chowmin"
+        android:text="Chowmin-Rs.50"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/Pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/burger"
+        android:layout_centerVertical="true"
+        android:onClick="pizza"
+        android:text="Pizza-Rs.99"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/hotdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/burger"
+        android:layout_marginBottom="175dp"
+        android:onClick="hotdog"
+        android:text="HotDog-Rs.70"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/manchurian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/burger"
+        android:layout_marginEnd="21dp"
+        android:onClick="man"
+        android:text="Manchurian-Rs.80"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/pasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/manchurian"
+        android:layout_alignStart="@+id/manchurian"
+        android:layout_alignTop="@+id/chowmine"
+        android:onClick="pasta"
+        android:text="Pastta-Rs.60"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/sandwich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/manchurian"
+        android:layout_centerVertical="true"
+        android:onClick="sand"
+        android:text="Sandwich-Rs.60"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/fries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/manchurian"
+        android:layout_alignStart="@+id/manchurian"
+        android:layout_alignTop="@+id/hotdog"
+        android:onClick="fries"
+        android:text="French fries-Rs.50"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:onClick="order"
+        android:text="ORDERED"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark" />
+
+
+</RelativeLayout>
